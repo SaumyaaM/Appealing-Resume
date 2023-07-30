@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: "Calibri";
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    padding: 2rem 10%;
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 5rem;
+}
+
+.address {
+    font-size: 3rem;
+    color: yellowgreen;
+    letter-spacing: 2px;
+}
+
+.image {
+    padding-top: 2rem;
+}
+
+.image img{
+    height: 15rem;
+    width: 15rem;
+    border: .2rem solid transparent;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+img:hover {
+    height: 16.5rem;
+    width: 16.5rem;
+    border: .2rem solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px grey;
+}
+
+section {
+    height: 150vh;
+    padding: 2rem 10%;
+}
+
+.home {
+    margin-top: 23rem;
+    left:0;
+    right:0;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.container {
+    
+    height: 100%;
+}
+
+.left {
+    left: 0;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    padding: 2rem 10%;
+}
+
+.left .contact {
+    font-size: 3rem;
+    color:blueviolet;
+    padding-bottom: 2rem;
+}
+
+.phone {
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid yellowgreen;
+}
+
+.email {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid yellowgreen;
+}
+
+.connect {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact-info {
+    font-size: 2rem;
+}
+
+.contact-info i {
+    font-size:1.7rem;
+    padding-left: 1rem;
+}
+
+.details {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-information {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.contact-information i {
+    font-size:2.2rem;
+    padding-left: 1rem;
+}
+
+.details-1 {
+    font-size: 1.5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.icon i {
+    font-size: 2.8rem;
+    color: white;
+    border: .6rem solid transparent;
+    border-radius: 50%;
+    background-color: rgb(167, 167, 167);
+    padding-left: .2rem;
+    transition: .5s ease;
+}
+
+.icon i:hover {
+    font-size: 3rem;
+    color: white;
+    border: .6rem solid transparent;
+    border-radius: 50%;
+    background-color: yellowgreen;
+}
+
+
+.left .skills {
+    font-size: 3rem;
+    color:blueviolet;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.tech {
+    font-size: 2rem;
+    border-bottom: .1rem solid yellowgreen;
+    padding-bottom: 2rem;
+}
+
+.tech i {
+    padding-right: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.column {
+    flex: 1 1 40rem;
+}
+
+.box .content {
+    position: relative;
+}
+
+.progress {
+    padding: 1rem 0;
+}
+
+.progress h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+}
+
+.progress .bar {
+    position: relative;
+    width: 100%;
+    height: 1.2rem;
+    border: .2rem solid yellowgreen;
+    border-radius: .6rem;
+    padding: 0;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: yellowgreen;
+}
+
+.column:nth-child(1) .content .progress:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.column:nth-child(1) .content .progress:nth-child(1) .bar span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column:nth-child(1) .content .progress:nth-child(1) .bar span:hover::before {
+    width: 90%;
+}
+
+
+
+.column:nth-child(1) .content .progress:nth-child(2) .bar span {
+    width: 70%;
+}
+
+.column:nth-child(1) .content .progress:nth-child(2) .bar span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column:nth-child(1) .content .progress:nth-child(2) .bar span:hover::before {
+    width: 70%;
+}
+
+
+
+.column:nth-child(1) .content .progress:nth-child(3) .bar span {
+    width: 60%;
+}
+
+.column:nth-child(1) .content .progress:nth-child(3) .bar span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column:nth-child(1) .content .progress:nth-child(3) .bar span:hover::before {
+    width: 60%;
+}
+
+
+.column:nth-child(1) .content .progress:nth-child(4) .bar span {
+    width: 40%;
+}
+
+.column:nth-child(1) .content .progress:nth-child(4) .bar span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column:nth-child(1) .content .progress:nth-child(4) .bar span:hover::before {
+    width: 40%;
+}
+
+
+
+
+.column:nth-child(1) .content .progress:nth-child(5) .bar span {
+    width: 55%;
+}
+
+.column:nth-child(1) .content .progress:nth-child(5) .bar span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column:nth-child(1) .content .progress:nth-child(5) .bar span:hover::before {
+    width: 55%;
+}
+
+
+
+.pro {
+    font-size: 2rem;
+    border-bottom: .1rem solid yellowgreen;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.pro i{
+    padding-right:2rem;
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.column-2 {
+    flex: 1 1 40rem;
+}
+
+.box-2 .content-2 {
+    position: relative;
+}
+
+.progress-2 {
+    padding: 1rem 0;
+}
+
+.progress-2 h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+}
+
+.progress-2 .bar-2 {
+    position: relative;
+    width: 100%;
+    height: 1.2rem;
+    border: .2rem solid yellowgreen;
+    border-radius: .6rem;
+    padding: 0;
+}
+
+.bar-2 span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: yellowgreen;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(1) .bar-2 span {
+    width: 85%;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(1) .bar-2 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(1) .bar-2 span:hover::before {
+    width: 85%;
+}
+
+
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(2) .bar-2 span {
+    width: 70%;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(2) .bar-2 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(2) .bar-2 span:hover::before {
+    width: 70%;
+}
+
+
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(3) .bar-2 span {
+    width: 75%;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(3) .bar-2 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: #a682c7;
+    z-index: 1;
+    transition: 1s;
+}
+
+.column-2:nth-child(1) .content-2 .progress-2:nth-child(3) .bar-2 span:hover::before {
+    width: 75%;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.course .coursework {
+    font-size: 3rem;
+    color: blueviolet;
+    padding-bottom: 1rem;
+    
+}
+
+.course h4 {
+    font-size: 2rem;
+    color: yellowgreen;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid yellowgreen;
+}
+
+.this {
+    padding-top: 2rem;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+.courses i {
+    padding-right: 2rem;
+}
+
+
+
+.right {
+    right: 0;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    padding: 2rem 10%;
+}
+
+.right .education {
+    font-size: 3rem;
+    color:blueviolet;
+    padding-bottom: 2rem;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid yellowgreen;
+    border-radius: .2rem;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.left-part {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.right-part {
+    position: relative;
+    right: 0;
+    width: 60%;
+}
+
+.year {
+    font-size: 2rem;
+    color: yellowgreen;
+}
+
+.description {
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.desc-0 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+.desc-1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+}
+
+.desc-2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.desc-3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    border: .1rem solid yellowgreen;
+    border-radius: 2rem;
+    width: 15rem;
+    padding-left: 1.7rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background: yellowgreen;
+    color: white;
+    transition: .7s ease;
+}
+
+.desc-3:hover {
+    background: white;
+    color: yellowgreen;
+}
+
+.desc-4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    border: .1rem solid yellowgreen;
+    border-radius: 2rem;
+    width: 32rem;
+    padding-left: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background: yellowgreen;
+    color: white;
+    transition: .7s ease;
+}
+
+.desc-4:hover {
+    background: white;
+    color: yellowgreen;
+}
+
+.right .project {
+    padding-top: 3rem;
+}
+
+.project h3 {
+    font-size: 3rem;
+    color:blueviolet;
+    padding-bottom: 2rem;
+}
+
+.project-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    border-bottom: .1rem solid yellowgreen;
+}
+
+.project-1 .leftpart {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.project-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: .1rem solid yellowgreen;
+}
+
+.project-2 .leftpart {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.project-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.project-3 .leftpart {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.leftpart .projectname {
+    font-size: 2rem;
+    color: yellowgreen;
+}
+
+.right .certificate {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.certificate h3 {
+    font-size: 3rem;
+    color:blueviolet;
+    padding-bottom: 2rem;
+}
+
+
+
+.certificate-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    border-bottom: .1rem solid yellowgreen;
+}
+
+.certificate-1 .leftpart {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.certificate-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.certificate-2 .leftpart {
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+
+.certificatename {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    padding-bottom: 1.5rem;
+}
+
+.drill {
+    position: absolute;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    border: .1rem solid yellowgreen;
+    border-radius: 2rem;
+    width: 10rem;
+    padding-left: 2.7rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background: yellowgreen;
+    color: white;
+    transition: .7s ease;
+}
+    
+.drill:hover {
+    background: white;
+    color: yellowgreen;
+}
+
+
+
+
+
+
+
+
